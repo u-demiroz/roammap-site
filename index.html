@@ -1,54 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Roam Map - Privacy Policy</title>
-<style>
-  body { font-family: -apple-system, sans-serif; max-width: 800px; margin: 40px auto; padding: 0 20px; color: #333; line-height: 1.6; }
-  h1 { color: #FF6B47; } h2 { color: #444; margin-top: 30px; }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roam Map — Discover Places Around You</title>
+  <meta name="description" content="Roam Map helps you discover, save, and share the best places around you. Check in, write reviews, and explore with friends.">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; background: #0a0a0a; color: #fff; }
+
+    nav {
+      padding: 20px 32px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #1e1e1e;
+    }
+    .logo { font-weight: 800; font-size: 20px; color: #FF6B47; }
+    nav a { color: #94a3b8; font-size: 14px; text-decoration: none; }
+    nav a:hover { color: #fff; }
+
+    .hero {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 90px 32px 60px;
+      text-align: center;
+    }
+    .icon { font-size: 72px; margin-bottom: 24px; }
+    h1 {
+      font-size: clamp(2rem, 6vw, 3.5rem);
+      font-weight: 900;
+      line-height: 1.1;
+      margin-bottom: 20px;
+    }
+    h1 span { color: #FF6B47; }
+    .subtitle {
+      font-size: 18px;
+      color: #94a3b8;
+      line-height: 1.7;
+      margin-bottom: 44px;
+    }
+
+    .cta-group { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; }
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: #FF6B47;
+      color: #fff;
+      font-weight: 700;
+      padding: 16px 32px;
+      border-radius: 50px;
+      font-size: 16px;
+      text-decoration: none;
+      transition: opacity .2s;
+    }
+    .btn-primary:hover { opacity: .85; }
+    .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: #1a1a1a;
+      color: #fff;
+      font-weight: 700;
+      padding: 16px 32px;
+      border-radius: 50px;
+      font-size: 16px;
+      text-decoration: none;
+      border: 1px solid #333;
+      transition: border-color .2s;
+    }
+    .btn-secondary:hover { border-color: #FF6B47; }
+
+    .features {
+      max-width: 680px;
+      margin: 72px auto 0;
+      padding: 0 32px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 16px;
+    }
+    .feature-card {
+      background: #111;
+      border: 1px solid #1e1e1e;
+      border-radius: 16px;
+      padding: 22px 18px;
+      text-align: center;
+      transition: border-color .2s;
+    }
+    .feature-card:hover { border-color: #FF6B47; }
+    .feature-card .emoji { font-size: 28px; margin-bottom: 10px; }
+    .feature-card .title { font-weight: 700; font-size: 14px; margin-bottom: 4px; }
+    .feature-card .desc { color: #64748b; font-size: 13px; line-height: 1.4; }
+
+    footer {
+      text-align: center;
+      padding: 48px 32px;
+      color: #475569;
+      font-size: 13px;
+      border-top: 1px solid #1e1e1e;
+      margin-top: 80px;
+    }
+    footer a { color: #64748b; text-decoration: none; }
+    footer a:hover { color: #fff; }
+  </style>
 </head>
 <body>
-<h1>Roam Map — Privacy Policy</h1>
-<p><strong>Last updated:</strong> March 28, 2026</p>
 
-<p>Roam Map ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and share information about you when you use our mobile application.</p>
+  <nav>
+    <span class="logo">Roam Map</span>
+    <a href="/privacy.html">Privacy Policy</a>
+  </nav>
 
-<h2>Information We Collect</h2>
-<ul>
-  <li><strong>Account Information:</strong> Name and email address when you register.</li>
-  <li><strong>Location Data:</strong> Your device location to show nearby places on the map. Location is not stored on our servers without your explicit action.</li>
-  <li><strong>User Content:</strong> Places you save, lists you create, check-ins, and reviews.</li>
-  <li><strong>Usage Data:</strong> Crash reports and diagnostic data to improve app performance.</li>
-</ul>
+  <section class="hero">
+    <div class="icon">🗺️</div>
+    <h1>Explore the World,<br><span>One Place at a Time</span></h1>
+    <p class="subtitle">
+      Discover hidden gems, save your favorite spots, check in with friends,
+      and build your personal travel map — all in one app.
+    </p>
+    <div class="cta-group">
+      <a href="https://apps.apple.com/app/roam-map" class="btn-primary">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+        App Store
+      </a>
+      <a href="https://play.google.com/store/apps/details?id=com.ugurdemiroz.roammap" class="btn-secondary">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M3.18 23.76c.3.17.64.24.99.2l12.7-7.34-2.83-2.83-10.86 9.97zm-1.94-20.4C1.08 3.6 1 3.88 1 4.19v15.62c0 .31.08.59.24.83l.09.08 8.75-8.75v-.2L1.33 3.28l-.09.08zm19.1 8.65l-2.52-1.46-3.19 3.19 3.19 3.19 2.54-1.47c.72-.42.72-1.1 0-1.52l-.02.07zM4.17.24L16.87 7.6l-2.83 2.83L3.18.46c.3-.38.68-.34.99-.22z"/></svg>
+        Google Play
+      </a>
+    </div>
+  </section>
 
-<h2>How We Use Your Information</h2>
-<ul>
-  <li>To provide and improve the Roam Map service</li>
-  <li>To show you nearby places and personalized content</li>
-  <li>To enable social features (following friends, sharing lists)</li>
-  <li>To display relevant advertisements via Google AdMob</li>
-  <li>To diagnose and fix technical issues</li>
-</ul>
+  <section class="features">
+    <div class="feature-card">
+      <div class="emoji">📍</div>
+      <div class="title">Discover Places</div>
+      <div class="desc">Find hidden gems nearby</div>
+    </div>
+    <div class="feature-card">
+      <div class="emoji">✅</div>
+      <div class="title">Check In</div>
+      <div class="desc">Mark where you&apos;ve been</div>
+    </div>
+    <div class="feature-card">
+      <div class="emoji">📋</div>
+      <div class="title">Build Lists</div>
+      <div class="desc">Save spots for later</div>
+    </div>
+    <div class="feature-card">
+      <div class="emoji">👥</div>
+      <div class="title">Follow Friends</div>
+      <div class="desc">See where they explore</div>
+    </div>
+    <div class="feature-card">
+      <div class="emoji">✈️</div>
+      <div class="title">Trip Planner</div>
+      <div class="desc">Plan your next adventure</div>
+    </div>
+    <div class="feature-card">
+      <div class="emoji">⭐</div>
+      <div class="title">Reviews</div>
+      <div class="desc">Share your experience</div>
+    </div>
+  </section>
 
-<h2>Third-Party Services</h2>
-<ul>
-  <li><strong>Google AdMob:</strong> Used for advertising. Google may collect device identifiers and usage data. See <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>.</li>
-  <li><strong>Supabase:</strong> Used for database and authentication. See <a href="https://supabase.com/privacy">Supabase Privacy Policy</a>.</li>
-  <li><strong>Apple Maps:</strong> Used for map display. See <a href="https://www.apple.com/legal/privacy/">Apple's Privacy Policy</a>.</li>
-</ul>
+  <footer>
+    <p>© 2026 Uğur Demiröz &nbsp;·&nbsp; <a href="/privacy.html">Privacy Policy</a> &nbsp;·&nbsp; <a href="mailto:privacy@roammap.app">Contact</a></p>
+  </footer>
 
-<h2>Data Sharing</h2>
-<p>We do not sell your personal data. We share data only with third-party service providers necessary to operate the app, and only as described above.</p>
-
-<h2>Data Retention & Deletion</h2>
-<p>You can delete your account and all associated data at any time from the app settings. Upon deletion, your data is permanently removed from our servers.</p>
-
-<h2>Children's Privacy</h2>
-<p>Roam Map is not directed at children under 13. We do not knowingly collect personal information from children under 13.</p>
-
-<h2>Contact Us</h2>
-<p>If you have questions about this Privacy Policy, contact us at: <strong>privacy@roammap.app</strong></p>
 </body>
 </html>
